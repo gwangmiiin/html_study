@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8"/>
+  <title>하위 선택자</title>
+  <style>
+    #main h3{
+      border-left: 8px solid orange;
+      padding-left: 20px;
+    }
+    #main p{
+      line-height: 180%;
+    }
+    #main span{
+      font-weight: bold;
+    }
+    #main .test{
+      color: red;
+    }
+    #intro{
+      border: 1px solid green;
+      padding: 20px;
+      margin-top: 30px;
+      border-radius: 15px;
+    }
+    #intro h3{
+      border-bottom: 1px dotted #ccc;
+      padding-bottom: 5px;
+    }
+    #intro span{
+      font-weight: bold;
+      color: red;
+    }
+  </style>
+</head>
+
+<body>
+    <div id="main">
+      <h3>
+        봄빛 식물원
+      </h3>
+      <p>봄빛 식물원은 --- --- --- <span class="test">삼각산 자락에 위치</span>--- ---  ---</p>
+    </div>
+
+    <div id="intro">
+      <h3>식물원 관람 안내</h3>
+      <p>
+        -방문 1일전날까지 --- <br>
+        - <br>
+        - <span>12월 1일부터는 15:00자정</span> <br>
+      </p>
+      <h3>식물원 이용시간</h3>
+      <p>
+        - <br>
+        - <br>
+        - <span>홈페이지 게시판에 문의</span> <br>
+      </p>
+    </div>
+</body>
+
+</html>
