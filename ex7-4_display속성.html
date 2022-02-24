@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8"/>
+  <title>display 속성</title>
+  <style>
+    span{
+      color: red;
+      border: 1px solid red;
+    }
+    div{
+      background-color: #eee;
+    }
+    #text1{
+      display: inline;
+      width: 100px;
+      height: 100px;
+      /* inline은 w,h 가 적용되지 않음  */
+    }
+    #text2{
+      display: block;
+      width: 100px;
+      height: 100px;
+      margin-top: 100px;
+    }
+    #text3{
+      display: inline-block;
+      width: 100px;
+      height: 100px;
+       /* 속성은 블럭 형태는 인라인과 같다  */
+    }
+    #text4{
+      display: none;
+    }
+  </style>
+</head>
+<body>
+  <h1>display속성</h1>
+  <h3>1 display:inline</h3>
+  <div>
+    글자1 <span id="text1">안녕하세요</span> 글자2
+  </div>
+  <h3>2 display:block</h3>
+  <div>
+    글자1 <span id="text2">안녕하세요</span> 글자2
+  </div>
+  <h3>3 display:inline-block</h3>
+  <div>
+    글자1 <span id="text3">안녕하세요</span> 글자2
+  </div>
+  <h3>4 display:none</h3>
+  <div>
+    글자1 <span id="text4">안녕하세요</span> 글자2
+  </div>
+  <h3>4 display:속성 사용안함</h3>
+  <div>
+    글자1 <span>안녕하세요</span> 글자2
+  </div>
+</body>
+
+</html>
