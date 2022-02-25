@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8"/>
+  <title>회원가입폼</title>
+  <style>
+    *{
+      margin:0;
+      padding:0
+    }
+    li {
+      list-style: none;
+    }
+    .cols li{
+      display: inline-block;
+      line-height: 180%;
+    }
+    .input_size{
+      width: 150px;
+      height: 20px;
+    }
+    .w_size{
+      width: 120px;
+    }
+    .per_size{
+      width: 100px;
+      height: 20px;
+    }
+    .vert{
+      vertical-align: top;
+    }
+    .line{
+      border-top: 1px solid #ccc;
+      border-bottom: 1px solid #ccc;
+    }
+    .cols li button{
+      padding: 10px; 
+      margin-top: 10px; 
+      border: 1px solid black; 
+      border-radius: 3px;
+    }
+
+  </style>
+</head>
+<body>
+  <h3>회원가입폼</h3>
+  <br>
+    <ul class="line">
+      <li>
+        <ul class="cols">
+          <li class="w_size">아이디</li>
+          <li><input class="input_size" type="text"></li>
+        </ul>
+        <ul class="cols">
+          <li class="w_size">비밀번호</li>
+          <li><input class="input_size" type="password"></li>
+        </ul>
+        <ul class="cols">
+          <li class="w_size">비밀번호 확인</li>
+          <li><input class="input_size" type="password"></li>
+        </ul>
+        <ul class="cols">
+          <li class="w_size">이름</li>
+          <li><input class="input_size" type="text"></li>
+        </ul>
+        <ul class="cols">
+          <li class="w_size">이메일</li>
+          <li per_size><input class="per_size" type="text"> @
+            <select name="" id="">
+              <option value="">직접입력</option>
+              <option value="1">naver.com</option>
+              <option value="2">hanmail.com</option>
+              <option value="3">gmail.com</option>
+              <option value="4">nate.com</option>
+           </select>
+          </li>
+        </ul>
+        <ul class="cols">
+          <li class="w_size">이메일 수신</li>
+          <li>
+            <input type="radio" name="radio1" checked>비수신 
+            <input type="radio" name="radio1">수신
+          </li>
+        </ul>
+        <ul class="cols">
+          <li class="w_size">가입경로</li>
+          <li>
+            <input type="checkbox" name="check1">친구추천
+            <input type="checkbox" name="check2">인터넷 검색
+            <input type="checkbox" name="check3" checked>기타
+          </li>
+        </ul>
+        <ul class="cols">
+          <li class="vert w_size">인사말</li>
+          <li><textarea name="" id="" cols="50" rows="10"></textarea></li>
+        </ul>
+        <br>
+        
+      </li>
+    </ul>
+    <ul class="cols">
+      <li>
+        <button>저장하기</button>
+      </li>
+      <li>
+        <button>취소하기</button>
+      </li>
+    </ul>
+</body>
+</html>
