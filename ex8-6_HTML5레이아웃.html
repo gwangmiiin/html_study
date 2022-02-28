@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8" />
+  <title>float 속성 사용 예</title>
+  <style>
+    #wrap{
+      width: 600px;
+      margin: 0 auto;
+    }
+    header{
+      height: 60px;
+      background-color: #ddd;
+    }
+    aside{
+      width: 200px;
+      height: 300px;
+      background-color: pink;
+      float: left;
+    }
+    section{
+      width: 400px;
+      height: 300px;
+      background-color: yellow;
+      float: right;
+    }
+    footer{
+      clear: both;
+      height: 60px;
+      background-color: #ddd;
+    }
+    header,  aside, section, footer{
+      font-size: 20px;
+      text-align: center;
+      padding-top: 30px;
+    }
+  </style>
+</head>
+  <body>
+    <div id="wrap">
+      <h2>div 요소를 이용한 레이아웃</h2>
+      <header>상단 헤더</header>
+      <aside>사이드바</aside>
+      <section>메인 섹션</section>
+      <footer>하단 풋터</footer>
+    </div>
+  </body>
+</html>

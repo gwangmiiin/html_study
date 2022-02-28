@@ -9,6 +9,10 @@
       margin:0;
       padding:0
     }
+    .line{
+      border-top: 1px solid #ccc;
+      border-bottom: 1px solid #ccc;
+    }
     li {
       list-style: none;
     }
@@ -30,23 +34,22 @@
     .vert{
       vertical-align: top;
     }
-    .line{
-      border-top: 1px solid #ccc;
-      border-bottom: 1px solid #ccc;
-    }
     .cols li button{
       padding: 10px; 
       margin-top: 10px; 
       border: 1px solid black; 
       border-radius: 3px;
+      text-align: right;
     }
 
   </style>
 </head>
 <body>
+  <br>
   <h3>회원가입폼</h3>
   <br>
     <ul class="line">
+      <br>
       <li>
         <ul class="cols">
           <li class="w_size">아이디</li>
@@ -96,16 +99,11 @@
           <li><textarea name="" id="" cols="50" rows="10"></textarea></li>
         </ul>
         <br>
-        
       </li>
     </ul>
-    <ul class="cols">
-      <li>
-        <button>저장하기</button>
-      </li>
-      <li>
-        <button>취소하기</button>
-      </li>
-    </ul>
+    <div>
+      <button>저장하기</button>
+      <button>취소하기</button>
+    </div>
 </body>
 </html>

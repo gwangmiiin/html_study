@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8" />
+  <title>position:absolute</title>
+  <style>
+    #a, #b, #c{
+      width: 100px;
+      height: 60px;
+      background-color: yellow;
+      border: 1px solid black;
+    }
+    #b{
+      position: absolute; /* 내가 원래 있더 곳이 아닌 맨 처음 시작(부모요소의 시작), 즉 절대적인 위치를 잡을 수 있게 해줌 */
+      left: 60px;
+      top: 30px;
+    }
+  </style>
+</head>
+  <body>
+    <h3>절대위치 지정(position:absolute)</h3>
+    <div id="a">요소A</div>
+    <div id="b">요소B</div>
+    <div id="c">요소C</div>
+  </body>
+</html>

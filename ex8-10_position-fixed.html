@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8" />
+  <title>position:fixed</title>
+  <style>
+    #box{
+      width: 10px;
+      height: 3000px;
+      background-color: green;
+    }
+    .element{
+      position: fixed;
+      padding: 10px 20px;
+      color: white;
+    }
+    #a{
+      top:40px;
+      left: 20px;
+      background-color: red;
+    }
+    #b{
+      top:40px;
+      right: 20px;
+      background-color: green;
+    }
+    #c{
+      bottom:20px;
+      right: 20px;
+      background-color: blue;
+    }
+    #d{
+      bottom:20px;
+      left: 20px;
+      background-color: gray;
+    }
+    .circle_b{
+      border: 1px solid black;
+      border-radius: 100px;
+      position: fixed;
+    }
+  </style>
+</head>
+  <body>
+    <h3>절대위치 지정(position:fixed)</h3>
+  <div id="parent">
+    <div id="box"></div>
+    <div id="a" class="element">요소A</div>
+    <div id="b" class="element">요소B</div>
+    <div id="c" class="element">요소C</div>
+    <div id="d" class="element">요소D</div>
+    <div class="circle_b">d</div>
+  </div>
+  </body>
+</html>
