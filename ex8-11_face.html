@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8" />
+  <title>face</title>
+  <style>
+    .face{
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      margin: -150px 0 0 -150px;
+      width: 300px;
+      height: 300px;
+      border: 1px solid black;
+      border-radius: 100%;
+      background-color: yellow;
+      animation: face 2s infinite alternate;
+    }
+    .eye{
+      position: absolute;
+      width: 50px;
+      height: 50px;
+      background-color: black;
+      border-radius: 100%;
+      animation: eye 2s infinite alternate;
+    }
+    .eye.left{
+      left:50px;
+      top: 100px;
+      animation-delay: 1s;
+    }
+    .eye.right{
+      right:50px;
+      top: 100px;
+      animation-delay: 1.5s;
+    }
+    .nose{
+      position: absolute;
+      width: 10px;
+      height: 60px;
+      background-color: black;
+      /* left: 145px;
+      top: 130px; */
+      left: 50%; 
+      top: 50%; 
+      margin: -20px 0 0 -4px;
+      border-radius: 10px;
+    }
+    .mouth{
+      position: absolute;
+      width: 80px;
+      height: 80px;
+      left: 50%;
+      bottom: 10%;
+      margin: 0 0 0 -40px;
+      border-radius: 0 0 40px 40px;
+      border: 3px solid black;
+      animation: mouth 1.5s infinite alternate;
+      }
+      @keyframes face {
+        0%{
+          background-color: yellow;
+        }
+        50%{
+          background-color: green;
+        }
+        100%{
+          background-color: blue;
+        }
+      }
+      @keyframes eye {
+        from{ 
+          top: 100px;
+          transform: scale(.5); 
+        }
+        to{
+          top: 50px;
+          transform: scale(1.5)
+        }  
+    }
+    /* 내가 원하는 애니메이션 효과를 줄 수 있음 */
+      @keyframes mouth {
+        from{
+          height: 70px;
+        }
+        to{
+          height: 30px;
+          border-radius: 40px;
+        }
+        
+      }
+  </style>
+</head>
+  <body>
+    <div class="face">
+      <div class="eye left"></div>
+      <div class="eye right"></div>
+      <div class="nose"></div>
+      <div class="mouth"></div>
+    </div>
+  </body>
+</html>

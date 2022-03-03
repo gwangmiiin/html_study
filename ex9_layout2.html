@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8" />
+  <title>layout2</title>
+  <style>
+    *{
+      margin: 0;
+      padding: 0;
+      text-align: center;
+    }
+    .box{
+      width: 1100px;
+      margin: 0 auto;
+      border: 1px solid blue;
+    }
+    .box::after{
+      content: "";
+      display: block;
+      clear: both;
+    }
+    header{
+      height: 40px;
+      border: 1px solid red;
+    }
+    header #left_menu{
+      float: left;
+      border: 1px solid red;
+    }
+    header #right_menu{
+      float: right;
+      border: 1px solid red;
+    }
+    section #main_image{
+      height: 150px;
+      border: 1px solid red;
+    }
+    section #product_list{
+      height: 250px;
+      border: 1px solid red;
+    }
+    #footer1{
+      clear: both;
+      height: 80px;
+      border: 1px solid red;
+    }
+    #footer2{
+      clear: both;
+      height: 80px;
+      border: 1px solid red;
+    }
+    #footer3{
+      clear: both;
+      height: 80px;
+      border: 1px solid red;
+    }
+  </style>
+</head>
+
+  <body>
+    <header class="box">
+      <nav id="left_menu">좌측메뉴</nav>
+      <nav id="right_menu">우측메뉴</nav>
+    </header>
+
+    <section class="box">
+      <div>
+        <div id="main_image">
+          메인 이미지
+        </div>
+        <div id="product_list">
+          상품리스트
+        </div>
+      </div>
+    </section> 
+
+    <footer>
+      <div class="box">
+        <div  id="footer1">
+          푸터1
+        </div>
+      </div>
+
+     <div class="box">
+      <div  id="footer2">
+        푸터2
+      </div>
+   </div>
+   <div class="box">
+    <div  id="footer3">
+      푸터3
+    </div>
+ </div>
+  </body>
+</html>
