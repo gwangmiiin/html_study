@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8" />
+  <title>layout</title>
+  <style>
+    *{
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    li{
+      list-style: none;
+    }
+    body{
+      min-width: 1100px;
+    }
+    .box{
+      position: relative;
+      width: 1100px;
+      margin: 0 auto;
+      border: 1px solid blue;
+      }
+    /* Header */
+    header{
+      height: 166px;
+    }
+    #logo{
+      float: left;
+      margin: 80px 0 0 60px;
+    }
+    #menu{
+      float: right;
+      text-align: right;
+      margin-right: 20px;
+    }
+    #menu li{
+      display: inline-block;
+    }
+    #top_menu li{
+      margin: 30px 0 0 10px;
+    }
+    #main_menu li{
+      margin: 50px 0 0 80px;
+      font-weight: bold;
+      font-size: 20px;
+    }
+    /* Main Image */
+    #main_image{
+      height: 312px;
+      background: url(/09_img/main_bg.png) no-repeat center;
+      text-align: center;
+    }
+    #main_image a{
+      position: absolute;
+      right: 100px;
+      top: 220px;
+    }
+
+    /* Aside */
+    aside{
+      float: left;
+      width: 220px;
+      margin: 70px 0;
+    }
+    aside .title1{
+      padding: 12px;
+      background-color: #0ca9a3;
+      color: white;
+      font-size: 18px;
+    }
+    aside .comment{
+      padding: 20px 10px;
+      line-height: 1.5;
+    }
+    aside .search input{
+      width: 160px;
+      height: 32px;
+      border: 1px solid black;
+      vertical-align: top;
+    }
+    aside .search button{
+      margin-left: 5px;
+      padding: 6px 10px;
+      border: 1px solid black;
+    }
+    aside .title2{
+      margin-top: 20px;
+      padding: 12px;
+      border-top: 2px solid black;
+      border-bottom: 1px solid #ccc;
+      font-size: 18px;
+    }
+    aside .list{
+      margin: 20px 0;
+    }
+    aside .list li{
+      margin: 10px 12px;
+    }
+    aside .reply{
+      border: 1px solid #0ca9a3;
+      padding: 12px;
+    }
+    aside .reply h2{
+      font-size: 18px;
+      margin: 10px 0 15px;
+    }
+    aside .reply li{
+      margin-top: 6px;
+    }
+
+    /* Main */
+    #main{
+      float: right;
+      width: 840px;
+      margin: 70px 0;
+    }
+    #main1{
+      float: left;
+      width: 405px;
+    }
+    #main1 .title1{
+      padding-bottom: 8px;
+      border-bottom: 1px solid black;
+    }
+    #main1 .latest{
+      margin-top: 30px;
+    }
+    #main1 .items{
+      position: relative;
+      height: 34px;
+    }
+    #main1 .items .subject{ 
+      position: absolute;
+      left: 0;
+      top: 0;
+    }
+    #main .items .date{
+      position: absolute;
+      right: 0;
+      top: 0;
+    }
+    #main .title2{
+      margin-top: 30px;
+      padding-bottom: 8px;
+      border-bottom: 1px solid black;
+    }
+    #main2{
+      float: right;
+      width: 400px;
+    }
+    #main2 .title1{
+      padding-bottom: 8px;
+      border-bottom: 1px solid black;
+    }
+    #main2 .item1{
+      float: left;
+      width: 189px;
+      margin-top: 30px;
+    }
+    #main2 .item2{
+      float: right;
+      width: 189px;
+      margin-top: 30px;
+    }
+    #main2 .subject{
+      margin-top: 10px;
+      font-weight: bold;
+      font-size: 16px;
+    }
+    #main .date{
+      margin-top: 5px;
+    }
+
+    /* Footer */
+    footer {
+        clear: both;
+        height: 260px;
+        background-color: #05354e;
+        color: white;
+      }
+    #bottom_menu ul {
+        padding: 20px 0 0 100px;
+        font-weight: bold;
+      }
+    #bottom_menu li {
+        display: inline;
+        margin-right: 30px;
+      }
+    footer .items {
+        float: left;
+        margin: 40px 0 0 100px;
+      }
+    footer h3 {
+      color:#0ca9a3;  
+    }
+    footer .items ul {  
+      margin-top: 15px;  
+    }
+    footer .items li {	
+      margin-top: 5px; 
+    }
+    footer .phone {
+        font-size: 25px;
+        font-weight: bold;
+      }
+  </style>
+</head>
+  <body>
+    <header>
+      <div class="box"> 
+        <div id="logo">
+          <img src="/09_img/logo.png" alt="">
+        </div>
+        <nav id="menu">
+          <ul id="top_menu">
+            <li>김광민님</li>
+            <li>|</li>
+            <li>로그아웃</li>
+            <li>|</li>
+            <li>정보수정</li>
+          </ul>
+          <ul id="main_menu">
+            <li>Home</li>
+            <li>출석부</li>
+            <li>작품갤러리</li>
+            <li>게시판</li>
+          </ul>
+        </nav>
+    </div>
+    </header>
+
+    <section id="main_image">
+      <div class="box">
+        <a href="#"><img src="/09_img/btn_class.png" alt=""></a>
+      </div>
+    </section>
+
+    <div class="box">
+      <aside>
+        <h2 class="title1">
+          The 베이킹
+        </h2>
+        <p class="comment">
+          안녕하세요. 쿠키와 빵 만들기 정보를 고융하고 소통하는 공간입니다.
+        </p>
+        <div class="search">
+          <input type="text"><button>검색</button>
+        </div>
+        <h2 class="title2">
+          베이킹/요리
+        </h2>
+        <ul class="list">
+          <li>쿠키 만들기</li>
+          <li>빵 만들기</li>
+          <li>마카롱 만들기</li>
+        </ul>
+        <div class="reply">
+          <h2>최근댓글</h2>
+          <ul>
+            <li>
+              안녕하세요
+            </li>
+            <li>
+              안녕하세요
+            </li>
+            <li>
+              안녕하세요
+            </li>
+          </ul>
+        </div>
+      </aside>
+      <section id="main">
+        <div id="main1">
+          <h3 class="title1">
+            알림
+          </h3>
+          <ul class="latest">
+            <li class="items">
+              <div class="subject">
+                쿠킹 클래스 연기합니다.
+              </div>
+              <div class="date">
+                9.30
+              </div>
+            </li>
+            <li class="items">
+              <div class="subject">
+                쿠킹 클래스 연기합니다.
+              </div>
+              <div class="date">
+                9.30
+              </div>
+            </li>
+            <li class="items">
+              <div class="subject">
+                쿠킹 클래스 연기합니다.
+              </div>
+              <div class="date">
+                9.30
+              </div>
+            </li>
+            <li class="items">
+              <div class="subject">
+                쿠킹 클래스 연기합니다.
+              </div>
+              <div class="date">
+                9.30
+              </div>
+            </li>
+          </ul>
+          <h3 class="title2">
+            게시판
+          </h3>
+          <ul class="latest">
+            <li class="items">
+              <div class="subject">
+                쿠킹 클래스 연기합니다.
+              </div>
+              <div class="date">
+                9.30
+              </div>
+            </li>
+            <li class="items">
+              <div class="subject">
+                쿠킹 클래스 연기합니다.
+              </div>
+              <div class="date">
+                9.30
+              </div>
+            </li>
+            <li class="items">
+              <div class="subject">
+                쿠킹 클래스 연기합니다.
+              </div>
+              <div class="date">
+                9.30
+              </div>
+            </li>
+            <li class="items">
+              <div class="subject">
+                쿠킹 클래스 연기합니다.
+              </div>
+              <div class="date">
+                9.30
+              </div>
+            </li>
+          </ul>
+          
+        </div>
+        <div id="main2">
+          <h3 class="title1">
+            제빵 클래스
+          </h3>
+          <ul class="item1">
+            <li>
+              <img src="/09_img/bread1.png" alt="">
+            </li>
+            <li class="subject">
+              도너츠 만들기
+            </li>
+            <li class="date">
+              21.09.30
+            </li>
+          </ul>
+          <ul class="item2">
+            <li>
+              <img src="/09_img/bread2.png" alt="">
+            </li>
+            <li class="subject">
+              도너츠 만들기
+            </li>
+            <li class="date">
+              21.09.30
+            </li>
+          </ul>
+          <ul class="item1">
+            <li>
+              <img src="/09_img/bread3.png" alt="">
+            </li>
+            <li class="subject">
+              도너츠 만들기
+            </li>
+            <li class="date">
+              21.09.30
+            </li>
+          </ul>
+          <ul class="item2">
+            <li>
+              <img src="/09_img/bread4.png" alt="">
+            </li>
+            <li class="subject">
+              도너츠 만들기
+            </li>
+            <li class="date">
+              21.09.30
+            </li>
+          </ul>
+        </div>
+      </section>
+    </div>
+
+    <footer>
+      <div class="box">
+        <nav id="bottom_menu">
+          <ul>
+            <li>The 베이킹 소개</li>
+            <li>개인정보처리방침</li>
+            <li>저작권 정보</li>
+            <li>이용 안내</li>
+          </ul>
+        </nav>
+        <div class="items">
+          <h3>문의전화</h3>
+          <ul>
+            <li class="phone">123-1234</li>
+            <li>10:00 - 18:00(Lunch 12:00 - 13:00)</li>
+          </ul>
+        </div> <!-- items -->
+        <div class="items">
+          <h3>The 베이킹</h3>
+          <ul>
+            <li>주소 : 경기도 용인시 기흥구 동백대로 123</li>
+            <li>전화 : 031-123-1234</li>
+            <li>팩스 : 031-123-1234</li>
+            <li>이메일 : 123-12-12345</li>
+          </ul>
+        </div> <!-- items -->
+        <div class="items">
+          <h3>입금 정보</h3>
+          <ul>
+            <li>농협 123-123-123456</li>
+            <li>The 베이킹</li>
+          </ul>
+        </div> <!-- items -->
+      </div>
+    </footer>
+
+  </body>
+</html>

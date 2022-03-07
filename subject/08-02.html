@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>8-2</title>
+    <style>
+        h2{
+            width: 200px;
+            margin: 20px auto;
+        }
+        #box{
+            position: relative;
+            width: 650px;
+            height: 520px;
+            background-color: green;
+            margin: 0 auto;
+        }
+        #box div{
+            background-color: orange;
+            width: 100px;
+            box-shadow: 3px 3px 10px white;
+            border-radius: 15px;
+            text-align: center;
+            position: absolute;
+        }
+        #box a{
+            display: block;
+            width: 100%;
+            height: 70px;
+            padding-top: 20px;
+            transition: 1s all;
+        }
+        #box #menu1{
+            left: 280px;
+            top: 90px;
+        }
+        #box #menu2{
+            left: 140px;
+            top: 140px;
+        }
+        #box #menu3{
+            left: 420px;
+            top: 140px;
+        }
+        #box #menu4{
+            left: 140px;
+            top: 280px;
+        }
+        #box #menu5{
+            left: 420px;
+            top: 280px;
+        }
+        #box #menu6{
+            left: 280px;
+            top: 350px;
+        }
+        a:link, a:visited, a:active{
+            color: black;
+            font-weight: bold;
+            text-decoration: none;
+            font-size: 18px;
+        }
+        /* a:visited{
+            color: black;
+            font-weight: bold;
+            text-decoration: none;
+            font-size: 18px;
+        }
+        a:active{
+            color: black;
+            font-weight: bold;
+            text-decoration: none;
+            font-size: 18px;
+        } */
+        a:hover{
+            color: purple;
+            font-weight: bold;
+            text-decoration: underline;
+            font-size: 18px;
+            transform: scale(1.2);
+        }
+    </style>
+</head>
+<body>
+   <h2>
+       프로그래밍 강좌
+   </h2>
+   <div id="box">
+        <div id="menu1">
+            <a href="#">
+             HTML <br> 강좌
+            </a>
+        </div>
+        <div id="menu2">
+            <a href="#">
+                CSS <br> 강좌
+            </a>
+        </div>
+        <div id="menu3">
+            <a href="#">
+                파이썬 <br> 강좌
+            </a>
+        </div>
+        <div id="menu4">
+            <a href="#">
+                C# <br> 강좌
+               </a>
+        </div>
+        <div id="menu5">
+            <a href="#">
+                자바 <br> 강좌
+            </a>
+        </div>
+        <div id="menu6">
+            <a href="#">
+                PHP <br> 강좌
+            </a>
+        </div>
+   </div>
+</body>
+</html>

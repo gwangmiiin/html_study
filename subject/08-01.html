@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>8-1</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        #story{
+            width: 800px;
+            margin: 0 auto;
+        }
+        #story h2{
+            margin-top: 30px;
+            padding: 10px;
+            color: white;
+            background-color: green;
+            font-weight: normal;
+        }
+        .col1{
+            width: 220px;
+            float: left;
+            margin-top: 50px;
+            border: 1px solid red;
+        }
+        #story h3{
+            font-size: 22px;
+        }
+        #moto{
+            margin-top: 30px;
+            font-size: 30px;
+        }
+        #prize{
+            margin-top: 20px;
+            font-size: 18px;
+        }
+        .col2{
+            width: 550px;
+            float: right;
+            margin-top: 50px;
+            border: 1px solid red;
+        }
+        .col2 img{
+            float: left;
+            border: 1px solid blue;
+            width: 200px;
+        }
+        .col2 li{
+            list-style: none;
+        }
+        .col2 .text{
+            float: right;
+            border: 1px solid blue;
+
+        }
+        .items li{
+            display: inline-block;
+        }
+        .comment{
+            width: 250px;
+            font-size: 18px;
+            margin: 0 0 20px 10px;
+            border-bottom: 1px solid #ddd;
+            padding-bottom: 10px;
+        }
+        .date{
+            font-size: 25px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div id="story">
+        <h2>
+            기업 연혁
+        </h2>       
+        <div class="col1">
+            <h3>
+                2018~현재
+            </h3>
+            <p id="moto">
+                환경과 사람을 <br> 존중하는 기업 <br> '환경 사랑'
+            </p>
+            <p id="prize">
+                환경 관련 우수기업 <br> 대통령상을 수상하다.
+            </p>
+        </div>
+        <div class="col2">
+            <div class="img">
+                <img src="/img_sub8/choco1.jpg" alt="">
+            </div>
+            <div class="text">
+                <ul>
+                    <li class="items" >
+                        <ul>
+                            <li class="date">2021</li>
+                            <li class="comment">환경사랑 수원 전시장 오픈</li>
+                        </ul>
+                    </li>
+                    <li class="items" >
+                        <ul>
+                            <li class="date">2020</li>
+                            <li class="comment">환경사랑 광주 전시장 오픈</li>
+                        </ul>
+                    </li>
+                    <li class="items" >
+                        <ul>
+                            <li class="date">2019</li>
+                            <li class="comment">환경사랑 대전 전시장 오픈</li>
+                        </ul>
+                    </li>
+                    <li class="items" >
+                        <ul>
+                            <li class="date">2018</li>
+                            <li class="comment">환경사랑 서울 전시장 오픈</li>
+                        </ul>
+                    </li>
+                    
+                </ul>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
