@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>10-7 웹프로그래밍 강좌</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        li{
+            list-style: none;
+        }
+        .box{
+            width: 80%;
+            height: 50%;
+            background-color: #eee;
+            margin: 0 auto;
+        }
+        .col_1{
+            width: 8.33%;
+        }
+        .col_2{
+            width: 16.66%;
+        }
+        .col_3{
+            width: 25%;
+        }
+        .col_4{
+            width: 33.33%;
+        }
+        .col_5{
+            width: 41.66%;
+        }
+        .col_6{
+            width: 50%;
+        }
+        .col_7{
+            width: 58.33%;
+        }
+        .col_8{
+            width: 66.66%;
+        }
+        .col_9{
+            width: 75%;
+        }
+        .col_10{
+            width: 83.33%;
+        }
+        .col_11{
+            width: 91.66%;
+        }
+        .col_12{
+            width: 100%;
+        }
+        [class*="col_"]{
+            float: left;
+            padding: 15px;
+        }
+        header{
+            height: 80px;
+            padding: 30px 0 0 30px;
+            background-color: #33b30b;
+            color: #fff;
+        }
+        .row{
+            margin-top: 10px;
+        }
+        .row::after{
+            content: "";
+            display: block;
+            clear: both;
+        }
+        .menu li{
+            padding: 10px;
+            margin-bottom: 12px;
+            background-color: #3ea3d9;
+            color: #fff;
+            box-shadow: 3px 3px 5px #aaa;
+        }
+        .menu a:link, .menu a:visited, .menu a:hover, .menu a:active{
+            color: #fff;
+            text-decoration: none;
+        }
+        .menu li:hover{
+            background-color: orange;
+        }
+        section p{
+            line-height: 1.5;
+            padding-top: 10px;
+        }
+        footer{
+            clear: both;
+            height: 80px;
+            background-color: #eee;
+            text-align: center;
+            font-size: 0.9em;
+            padding-top: 30px;
+            margin-top: 10px;
+        }
+        @media only screen and (max-width:768px){
+            [class*="col_"]{
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h3>웹 프로그래밍 강좌</h3>
+    </header>
+
+    <div class="row">
+        <nav class="col_3 menu">
+            <ul>
+                <li><a href="">웹 페이지란?</a></li>
+                <li><a href="">HTML/CSS</a></li>
+                <li><a href="">PHP 프로그래밍</a></li>
+                <li><a href="">자바스크립트/jQuery</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <section class="col_9">
+        <h2>웹페이지란?</h2>
+        <p>원장은 국회의 동의를 얻어 대통령이 임명하고, 그 임기는 4년으로 하며, 1차에 한하여 중임할 수 있다. 모든 국민은 헌법과 법률이 정한 법관에 의하여 법률에 의한 재판을 받을 권리를 가진다.</p>
+        <p>제3항의 승인을 얻지 못한 때에는 그 처분 또는 명령은 그때부터 효력을 상실한다. 이 경우 그 명령에 의하여 개정 또는 폐지되었던 법률은 그 명령이 승인을 얻지 못한 때부터 당연히 효력을 회복한다.</p>
+    </section>
+
+    <footer>
+        <p>국가는 사회보장·사회복지의 증진에 노력할 의무를 진다. 대통령은 국무총리·국무위원·행정각부의.</p>
+    </footer>
+</body>
+</html>
